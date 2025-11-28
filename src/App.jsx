@@ -2,9 +2,15 @@ import React, { useEffect, useState } from "react";
 
 // ====== DATA ======
 const photos = [
-  { src: "/assets/foto1.jpg", caption: "Un momento bonito juntas 💕" },
-  { src: "/assets/foto2.jpg", caption: "Tu sonrisa que ilumina todo ✨" },
-  { src: "/assets/foto3.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "src/assets/foto1.jpg", caption: "Un momento bonito juntas 💕" },
+  { src: "src/assets/foto2.jpg", caption: "Tu sonrisa que ilumina todo ✨" },
+  { src: "src/assets/foto3.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "src/assets/foto4.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "src/assets/foto5.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "src/assets/foto6.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "src/assets/foto7.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "src/assets/foto8.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "src/assets/foto9.jpg", caption: "Un recuerdo que adoro 🫶" },
 ];
 
 const timelineEvents = [
@@ -31,26 +37,26 @@ const timelineEvents = [
 ];
 
 const compliments = [
+  "Tu talento para dibujar, retratos re lindos.",
   "Tu forma de ver el mundo es preciosa.",
-  "Tienes un talento enorme para crear cosas bonitas.",
-  "Tu risa hace que todo sea más ligero.",
+  "Tienes un talento enorme para crear cosas bonitas, dibujar, pintar y más",
   "Eres mucho más fuerte de lo que crees.",
-  "Tu sensibilidad y tu bondad son un regalo.",
-  "Me encanta la persona que eres, sin filtros.",
+  "You have nice handwriting!",
+  "You're will accomplish so muchhhh",
 ];
 
 const quizQuestions = [
   {
     question: "¿Qué palabra describe mejor tu vibra?",
-    options: ["Caos total", "Luz bonita", "Modo zombie", "Nube gris"],
+    options: ["aburrida", "re genial", "zombie", "nube gris"],
     answerIndex: 1,
   },
   {
     question: "¿Qué superpoder creo que tienes?",
     options: [
-      "Hacer desaparecer tareas",
+      "Diversión",
       "Convertir ideas en dibujos hermosos",
-      "Dormir 30 horas seguidas",
+      "Dormir 100 horas seguidas",
       "Hablar con plantas",
     ],
     answerIndex: 1,
@@ -60,7 +66,7 @@ const quizQuestions = [
     options: [
       "Que no pase nada nuevo",
       "Que te rodee gente que te cuide mucho",
-      "Que vivas en un loop eterno de tareas",
+      "Que tengas muchas tareas",
       "Que nunca tengas tiempo para dibujar",
     ],
     answerIndex: 1,
@@ -161,7 +167,7 @@ function PhotoCarousel({ photos }) {
         </button>
       </div>
       <p className="hint">
-        (Coloca tus archivos en <code>public/assets/foto1.jpg</code>, <code>foto2.jpg</code>, etc.)
+        
       </p>
     </section>
   );
@@ -204,10 +210,10 @@ function OpeningCard() {
             </div>
             <div className="flip-card-back">
               <p>
-                Gracias por existir, por tu arte, por tus ideas raras y bonitas,
+                Gracias por existir kari, por tu arte, por tus ideas únicas y bonitas,
                 por todo lo que compartes conmigo.  
                 Deseo que este año se llene de cosas dulces, de proyectos que te
-                emocionen y de personas que te cuiden tanto como tú mereces.
+                emocionen y de personas que te cuiden tanto como tú mereces. y un novio jsjsaj
               </p>
               <p className="signature">Con muchooo cariño 💗</p>
             </div>
@@ -346,7 +352,6 @@ function MediaSection() {
     <section className="section card">
       <h2>Un poquito de música y video para acompañar 🎶</h2>
       <p className="small-text">
-        (Opcional) Puedes añadir aquí un video o un audio especial.
       </p>
       <div className="media-grid">
         <div>
@@ -354,21 +359,20 @@ function MediaSection() {
           <video
             className="media-video"
             controls
-            src="/assets/video1.mp4"
+            src="src/assets/video1.mp4"
           >
             Tu navegador no soporta video.
           </video>
         </div>
         <div>
           <p className="media-label">Canción para ti</p>
-          <audio controls src="/assets/song1.mp3" className="media-audio">
+          <audio controls src="src/assets/song1.mp3" className="media-audio">
             Tu navegador no soporta audio.
           </audio>
         </div>
       </div>
       <p className="hint">
-        Coloca los archivos en <code>public/assets/video1.mp4</code> y{" "}
-        <code>song1.mp3</code>.
+
       </p>
     </section>
   );
@@ -379,7 +383,7 @@ function Footer() {
     <footer className="footer">
       <p>
         Hecho con mucho cariño solo para ti 💗  
-        Ojalá este año esté lleno de salud, arte, risas y cosas buenas.
+       From Chio c:
       </p>
     </footer>
   );
