@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 
 // ====== DATA ======
 const photos = [
-  { src: "src/assets/foto1.jpg", caption: "Un momento bonito juntas 💕" },
-  { src: "src/assets/foto2.jpg", caption: "Tu sonrisa que ilumina todo ✨" },
-  { src: "src/assets/foto3.jpg", caption: "Un recuerdo que adoro 🫶" },
-  { src: "src/assets/foto4.jpg", caption: "Un recuerdo que adoro 🫶" },
-  { src: "src/assets/foto5.jpg", caption: "Un recuerdo que adoro 🫶" },
-  { src: "src/assets/foto6.jpg", caption: "Un recuerdo que adoro 🫶" },
-  { src: "src/assets/foto7.jpg", caption: "Un recuerdo que adoro 🫶" },
-  { src: "src/assets/foto8.jpg", caption: "Un recuerdo que adoro 🫶" },
-  { src: "src/assets/foto9.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "./assets/foto1.jpg", caption: "Un momento bonito juntas 💕" },
+  { src: "./assets/foto2.jpg", caption: "Tu sonrisa que ilumina todo ✨" },
+  { src: "./assets/foto3.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "./assets/foto4.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "./assets/foto5.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "./assets/foto6.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "./assets/foto7.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "./assets/foto8.jpg", caption: "Un recuerdo que adoro 🫶" },
+  { src: "./assets/foto9.jpg", caption: "Un recuerdo que adoro 🫶" },
 ];
 
 const timelineEvents = [
@@ -359,14 +359,14 @@ function MediaSection() {
           <video
             className="media-video"
             controls
-            src="src/assets/video1.mp4"
+            src="./assets/video1.mp4"
           >
             Tu navegador no soporta video.
           </video>
         </div>
         <div>
           <p className="media-label">Canción para ti</p>
-          <audio controls src="src/assets/song1.mp3" className="media-audio">
+          <audio controls src="./assets/song1.mp3" className="media-audio">
             Tu navegador no soporta audio.
           </audio>
         </div>
